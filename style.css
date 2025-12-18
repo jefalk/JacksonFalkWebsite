@@ -279,5 +279,18 @@ ul.main-menu li a.active {
   max-width: 320px;
 }
 
+.research-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.research-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 
 
