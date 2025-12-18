@@ -259,5 +259,25 @@ ul.main-menu li a.active {
   }
 }
 
+.research-image {
+  width: 100%;
+  max-width: 420px;   /* controls visual size */
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+
+.research-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.research-row img {
+  max-width: 320px;
+}
+
 
 
