@@ -1,7 +1,11 @@
 /**
  * Typography & Text styles
  */
-
+:root{
+  --bg: #4682B4;          /* steel blue */
+  --card: rgba(255,255,255,0.92);
+  --text: #0b1220;
+}
 /* html is set to 62.5% so that all the REM measurements are based on 10px sizing. So basically 1.5rem = 15px */
 html {
   font-size: 62.5%;
@@ -92,9 +96,12 @@ blockquote p:last-child {
 
 /* Full size background image */
 html, #container, .inner { background-color:transparent;}
-html {
+/**html {
   background:url(background.jpg) center center no-repeat fixed;
   background-size:cover;
+}*/
+html {
+  background-color: #4682B4; /* steel blue */
 }
 body {
   max-width:800px;
