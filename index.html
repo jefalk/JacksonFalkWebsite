@@ -1,143 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jackson E. Falk</title>
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Jackson E. Falk</title>
+    <meta name="description" content="Jackson E. Falk — research, publications, talks, and teaching.">
+    <meta name="author" content="Jackson E. Falk">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="logo.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-</head>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-<body>
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
 
-<header class="site-header">
-  <div class="site-title">Jackson E. Falk</div>
+    <header id="header">
+      <img src="logo.png">
+      <h1>Jackson E. Falk Personal Website</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#talks">Presentations &amp; Talks</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          
+          <div id="home" class="content-region hide">
+            <h2>Home</h2>
+            <p class="lead">
+              I’m a physics student and researcher. This site is a lightweight hub for my research projects, publications, presentations, and teaching.
+            </p>
 
-  <nav class="nav">
-    <a href="#home" class="tab active">Home</a>
-    <a href="#research" class="tab">Research</a>
-    <a href="#publications" class="tab">Publications</a>
-    <a href="#talks" class="tab">Presentations & Talks</a>
-    <a href="#teaching" class="tab">Teaching</a>
-    <a href="#contact" class="tab">Contact</a>
-  </nav>
-</header>
+            <div class="grid two">
+              <div class="card">
+                <h3>Current interests</h3>
+                <ul class="bullets">
+                  <li>Adaptive optics / thin-shell optics fabrication &amp; metrology</li>
+                  <li>Condensed matter: Rashba materials, crystal growth, transport/optics</li>
+                  <li>Physics education tools (interactive learning maps &amp; scaffolding)</li>
+                </ul>
+              </div>
 
-<main class="container">
+              <div class="card">
+                <h3>Quick links</h3>
+                <ul class="bullets">
+                  <li><a href="#publications">Publications</a> (papers &amp; preprints)</li>
+                  <li><a href="#talks">Presentations &amp; talks</a> (slides/posters)</li>
+                  <li><a href="#contact">Contact</a> (email &amp; profiles)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div id="research" class="content-region hide">
+            <h2>Research</h2>
+            <p>
+              Short summaries of ongoing and recent work. Replace the placeholders below with your own project blurbs, images, and links.
+            </p>
 
-  <!-- HOME -->
-  <div id="home" class="tab-content active">
-    <section class="home-hero card">
-      <img class="headshot" src="assets/Headshot.png" alt="Headshot of Jackson E. Falk">
+            <div class="card">
+              <h3>Adaptive optics / thin-shell optics</h3>
+              <p>
+                Example: development of free‑form slumping techniques for thin glass face sheets, surface metrology, and analysis/controls tooling.
+              </p>
+              <p class="meta">
+                Suggested links: GitHub repo • internal notes • figures • lab photos
+              </p>
+            </div>
 
-      <div>
-        <h1>Jackson E. Falk</h1>
-        <p class="lead">
-          Hi! My name is Jackson, and I am a 4th-year undergraduate Physics major at UCSC. My work spans thin-shell optical fabrication, adaptive optics instrumentation, optical metrology, condensed-matter materials, and interactive learning tools for physics education.
-        </p>
+            <div class="card">
+              <h3>BiTeI &amp; Rashba materials</h3>
+              <p>
+                Example: Bridgman crystal growth, characterization, and measurements connected to Rashba spin splitting and optoelectronic effects.
+              </p>
+              <p class="meta">
+                Suggested links: paper • dataset • code • collaborators
+              </p>
+            </div>
 
-        <div class="button-row">
-          <a class="btn" href="#research">Research</a>
-          <a class="btn btn-outline" href="#publications">Publications</a>
-          <a class="btn btn-outline" href="#talks">Talks</a>
+            <div class="card">
+              <h3>Physics education tooling</h3>
+              <p>
+                Example: interactive learning objective (LO) scaffolding maps, concept tagging, and revision pathways for intro physics.
+              </p>
+              <p class="meta">
+                Suggested links: demo • repo • write‑up
+              </p>
+            </div>
+          </div>
+
+          <div id="publications" class="content-region hide">
+            <h2>Publications</h2>
+            <p class="meta">Tip: keep each entry to one line + links (PDF/DOI/arXiv), and optionally a short “one-sentence takeaway.”</p>
+
+            <h3>Journal articles &amp; proceedings</h3>
+            <ol class="pub-list">
+              <li>
+                <span class="pub-title">Title of paper</span>
+                <span class="pub-authors">Author A, Author B, <strong>Jackson E. Falk</strong>, …</span>
+                <span class="pub-venue">Journal / Conference, Year</span>
+                <span class="pub-links">
+                  <a href="#">DOI</a> · <a href="#">PDF</a>
+                </span>
+              </li>
+            </ol>
+
+            <h3>Preprints</h3>
+            <ol class="pub-list">
+              <li>
+                <span class="pub-title">Title of preprint</span>
+                <span class="pub-authors">…</span>
+                <span class="pub-venue">arXiv:XXXX.XXXXX, Year</span>
+                <span class="pub-links">
+                  <a href="#">arXiv</a> · <a href="#">PDF</a>
+                </span>
+              </li>
+            </ol>
+          </div>
+
+          <div id="talks" class="content-region hide">
+            <h2>Presentations &amp; Talks</h2>
+            <p>
+              Posters, conference talks, invited talks, and outreach. Add links to slides, posters, recordings, or abstracts.
+            </p>
+
+            <ul class="talk-list">
+              <li>
+                <div class="talk-title">Talk / Poster Title</div>
+                <div class="talk-meta">Venue — City, State — Month Year</div>
+                <div class="talk-links"><a href="#">Slides</a> · <a href="#">Abstract</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <div id="teaching" class="content-region hide">
+            <h2>Teaching</h2>
+            <p>
+              Teaching experience, mentoring, sections led, and materials.
+            </p>
+
+            <div class="card">
+              <h3>Instructor / TA</h3>
+              <ul class="bullets">
+                <li>Course name — term/year (role) — topics</li>
+                <li>Course name — term/year (role) — topics</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3>Resources</h3>
+              <ul class="bullets">
+                <li><a href="#">Problem sets</a></li>
+                <li><a href="#">Solution write-ups</a></li>
+                <li><a href="#">Learning maps</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div id="contact" class="content-region hide">
+            <h2>Contact</h2>
+            <ul class="bullets">
+              <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+              <li>GitHub: <a href="https://github.com/jefalk">github.com/jefalk</a></li>
+              <li>Google Scholar / ORCID / LinkedIn: <a href="#">add links</a></li>
+            </ul>
+          </div>
+          
         </div>
       </div>
-    </section>
-  </div>
+    </div>
 
-  <!-- RESEARCH -->
-  <div id="research" class="tab-content">
-    <h2>Research</h2>
-
-    <section class="grid">
-
-      <article class="card">
-        <h3>Interactive Learning Maps for Physics</h3>
-        <p>
-          Interactive HTML/JavaScript learning maps that organize course modules
-          and learning objectives into navigable conceptual structures for students
-          and instructors.
-        </p>
-        <div class="button-row">
-          <a class="btn" href="PASTE_DEMO_URL" target="_blank">Live Demo</a>
-          <a class="btn btn-outline" href="PASTE_REPO_URL" target="_blank">GitHub</a>
-        </div>
-        <p class="meta">HTML · JavaScript · Education</p>
-      </article>
-
-      <article class="card">
-        <h3>Free-Form Slumping of Adaptive Secondary Facesheets</h3>
-        <p>
-          Development of fabrication and metrology workflows for thin glass
-          adaptive-optics mirror facesheets, including deformation modeling
-          and surface reconstruction.
-        </p>
-        <div class="button-row">
-          <a class="btn" href="PASTE_PAPER_URL" target="_blank">Paper</a>
-          <a class="btn btn-outline" href="PASTE_REPO_URL" target="_blank">Code</a>
-        </div>
-        <p class="meta">Optical Fabrication · AO · Python</p>
-      </article>
-
-      <article class="card">
-        <h3>BiTeI Single-Crystal Growth & Characterization</h3>
-        <p>
-          Bridgman growth of BiTeI single crystals with structural and transport
-          characterization using XRD and PPMS systems.
-        </p>
-        <p class="meta">Condensed Matter · Materials</p>
-      </article>
-
-    </section>
-  </div>
-
-  <!-- PUBLICATIONS -->
-  <div id="publications" class="tab-content">
-    <h2>Publications</h2>
-    <ol class="pub-list">
-      <li>
-        <strong>J. E. Falk</strong> et al.,
-        <em>Free-form slumping techniques for adaptive secondary mirrors</em>,
-        JATIS (2025).
-      </li>
-    </ol>
-  </div>
-
-  <!-- TALKS -->
-  <div id="talks" class="tab-content">
-    <h2>Presentations & Talks</h2>
-    <ul class="talk-list">
-      <li>SPIE — Adaptive Optics Systems (2024, 2025)</li>
-      <li>APS Far West Section Meeting (2025)</li>
-    </ul>
-  </div>
-
-  <!-- TEACHING -->
-  <div id="teaching" class="tab-content">
-    <h2>Teaching</h2>
-    <p>
-      Undergraduate physics instruction, curriculum scaffolding,
-      and interactive educational tool development.
-    </p>
-  </div>
-
-  <!-- CONTACT -->
-  <div id="contact" class="tab-content">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:jefalk@ucsc.edu">jefalk@ucsc.edu</a></p>
-    <p>GitHub: <a href="https://github.com/jefalk" target="_blank">github.com/jefalk</a></p>
-  </div>
-
-</main>
-
-<footer class="footer">
-  © <span id="year"></span> Jackson E. Falk
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
-</body>
+    <footer>
+      © <span id="year"></span> Jackson E. Falk · Built with GitHub Pages
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    
+  </body>
 </html>
