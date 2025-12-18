@@ -228,10 +228,10 @@ ul.main-menu li a.active {
 }
 
 .headshot {
-  width: 160px;          /* reasonable default size */
-  height: 160px;
+  width: 180px;          /* reasonable default size */
+  height: 180px;
   object-fit: cover;
-  border-radius: 50%;    /* circular crop */
+  border-radius: 80%;    /* circular crop */
   border: 3px solid rgba(255,255,255,0.8);
   flex-shrink: 0;
 }
