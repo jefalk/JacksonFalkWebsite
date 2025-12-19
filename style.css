@@ -304,5 +304,20 @@ ul.main-menu li a.active {
   border-radius: 8px;
 }
 
+.research-row-feature {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.research-image-feature {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
 
 
